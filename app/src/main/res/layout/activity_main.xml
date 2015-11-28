@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/Fondo"
+        android:id="@+id/Background"
+        android:contentDescription="@string/Background"
+        />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BotonTest"
+        android:text="@string/Boton_Superior"
+        android:contentDescription="@string/Boton_Superior"
+        android:layout_above="@+id/Boton_Medio"
+        android:layout_marginBottom="80dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_purple"
+        android:onClick=""
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Boton_Medio"
+        android:text="@string/Boton_Medio"
+        android:contentDescription="@string/Boton_Medio"
+        android:layout_centerInParent="true"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textColor="@android:color/holo_purple"
+        android:onClick=""
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Boton_Inferior"
+        android:text="@string/Boton_Inferior"
+        android:contentDescription="@string/Boton_Inferior"
+        android:layout_below="@id/Boton_Medio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textSize="40dp"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_purple"
+        android:onClick=""
+        />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/Retroceso"
+        android:src="@drawable/undo"
+        android:layout_alignLeft="@id/Background"
+        android:layout_alignBottom="@id/Background"
+        android:contentDescription="@string/Retroceso"
+        />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/Volumen"
+        android:layout_alignBottom="@id/Background"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/volumen"
+        android:contentDescription="@string/Volumen"
+        />
+
+</RelativeLayout>
